@@ -310,9 +310,19 @@ $("Example").fadeOut();
 					<hr>
 
 					<a class="anchor" id="ManipluatingDom"></a>
+					<h3>Manipulating the DOM</h3>
 					<p>So far we have only been using jQuery to either create events or hiding or showing elements. One of the best things about javascript is that it gives us the ability to completly change the DOM. We can add elements to the page which weren't originally in the html. We can remove elements, empty entire sections and much more.</p>
 					
 					<h4>Append</h4>
+					<p>Append is a jQuery function for adding objects into the DOM. Append will add whatever you set to the end of the parent you specify. You should always append something to a parent element as if you don't then it won't know what you are wanting to do.</p>
+					<div class="well">		
+<pre>
+$("p").append("Some random Text");		
+</pre>
+					</div>
+					<p>What the line of code above says, add the string "Some Random Text" to the end of all <code>&lt;p&gt;</code> tags you have in the site. If you have a button which always appends the line then it will constantly be adding it and will never stop.</p>
+					<button class="btn btn-primary" id="AppendButton">Append Text</button>
+					<p id="AppendExample">This is the starting text.</p>	
 
 
 

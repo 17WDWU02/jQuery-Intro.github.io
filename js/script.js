@@ -51,7 +51,11 @@ $(document).ready(function(){
 
 	$('#FadeOut').click(function(){
 		$('#FadeExample').fadeOut();
-	})
+	});
+
+	$('#AppendButton').click(function(){
+		$('#AppendExample').append(' This section is added to the end of the paragraph');
+	});
 
 
 });
