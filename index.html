@@ -317,14 +317,45 @@ $("Example").fadeOut();
 					<p>Append is a jQuery function for adding objects into the DOM. Append will add whatever you set to the end of the parent you specify. You should always append something to a parent element as if you don't then it won't know what you are wanting to do.</p>
 					<div class="well">		
 <pre>
-$("p").append("Some random Text");		
+$("p").append("Some random Text to the end");		
 </pre>
 					</div>
 					<p>What the line of code above says, add the string "Some Random Text" to the end of all <code>&lt;p&gt;</code> tags you have in the site. If you have a button which always appends the line then it will constantly be adding it and will never stop.</p>
 					<button class="btn btn-primary" id="AppendButton">Append Text</button>
-					<p id="AppendExample">This is the starting text.</p>	
+					<p id="AppendExample">This is the starting text.</p>
+					<p>Using Prepend you can also add html elements into the page. Instead of just writing a normal string, you can write out a full html element and that will append into the parent. An Example of this is if you had a <code>&lt;ul&gt;</code> element and you wanted to keep adding <code>&lt;li&gt;</code> elements into the list.</p>
+					<div class="well">		
+<pre>
+$("ul").append("&lt;li&gt;This is a new list item&lt;/li&gt;");		
+</pre>
+					</div>
+					<button class="btn btn-primary" id="AddListItem">Add New List Item</button>
+					<p><strong>Append a new list item</strong></p>
+					<ul id="ListExample">
+						<li>This is the original list item</li>
+					</ul>
+
+					<h4>Prepend</h4>
+					<p>Prepend works the exact same as the append function. The only difference is that it add's it to the beginning of the parent element.</p>
+					<div class="well">		
+<pre>
+$("p").prepend("Some random Text to the beginning");		
+</pre>
+					</div>
+					<button class="btn btn-primary" id="PrependButton">Prepend Text</button>
+					<p id="PrependExample">This is the starting text.</p>
+
+					<h4>Remove</h4>
+					<p>Remove is a function which </p>
 
 
+					<h4>Empty</h4>
+
+					<h4>Add and Remove Class</h4>
+
+					<h4>Toggle Class</h4>
+
+					<h4>CSS</h4>
 
 
 

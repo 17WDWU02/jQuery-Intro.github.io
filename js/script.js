@@ -54,8 +54,16 @@ $(document).ready(function(){
 	});
 
 	$('#AppendButton').click(function(){
-		$('#AppendExample').append(' This section is added to the end of the paragraph');
+		$('#AppendExample').append(' This section is added to the end of the paragraph.');
 	});
+
+	$('#AddListItem').click(function(){
+		$('#ListExample').append('<li>This list item has been appended to the ul</li>')
+	})
+
+	$('#PrependButton').click(function(){
+		$('#PrependExample').prepend('This section is added to the beginning of the paragraph. ');		
+	})
 
 
 });
