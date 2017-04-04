@@ -346,12 +346,44 @@ $("p").prepend("Some random Text to the beginning");
 					<p id="PrependExample">This is the starting text.</p>
 
 					<h4>Remove</h4>
-					<p>Remove is a function which </p>
-
+					<p>Remove is a function which completely removes html elements from the pages. When this function is called, the browser will render your html file but will completely leave out what you have asked to remove in jQuery.</p>
+					<div class="well">		
+<pre>
+$("#RemoveExample").remove();		
+</pre>
+					</div>
+					<p>In the code above, it is completely removing the element with the ID of RemoveExample. In the example bellow, if you inspect the page and find where we have <code>&lt;div id="RemoveExample"&gt;&lt;/div&gt;. When you click the remove element button, this div should be removed.</code></p>
+					<button class="btn btn-primary" id="RemoveButton">Remove Element</button>
+					<div id="RemoveExample"></div>
 
 					<h4>Empty</h4>
+					<p>Sometimes you might not want to completely remove the element, but rather just empty all of its contents. The empty function will empty everything within the selected element.</p>
+					<div class="well">		
+<pre>
+$("#EmptyExample").empty();		
+</pre>
+					</div>
+					<p>This line of code will remove all of the child elements the selected div but it won't affect itself.</p>
+					<button class="btn btn-primary" id="EmptyButton">Empty Element</button>
+					<div id="EmptyExample">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
 
 					<h4>Add and Remove Class</h4>
+					<p>jQuery gives us a real simple way to add and remove classes to our html elements. When you use addClass, if that class doesn't already exsist on the element then it will add it, if you use removeClass, if it exsists on the element it will remove it.</p>
+					<div class="well">		
+<pre>
+$("#ID").addClass('Red');
+$("#ID").removeClass('Blue');
+</pre>
+					</div>
+					<p>What this states is that it will add the class 'red' to the element with the ID of ID and it will also remove the class 'blue' from that element aswell.</p>
+
 
 					<h4>Toggle Class</h4>
 

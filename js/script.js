@@ -65,5 +65,13 @@ $(document).ready(function(){
 		$('#PrependExample').prepend('This section is added to the beginning of the paragraph. ');		
 	})
 
+	$('#RemoveButton').click(function(){
+		$('#RemoveExample').remove();
+	})
+
+	$('#EmptyButton').click(function(){
+		$('#EmptyExample').empty();
+	})
+
 
 });
