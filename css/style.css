@@ -60,3 +60,15 @@ code{
 	padding: 10px;
 	border: solid #6AC5AC 3px;
 }
+
+#AddRemoveExample{
+	margin-top: 10px;
+}
+
+.red{
+	background-color: red;
+}
+
+.blue{
+	background-color: blue;
+}
