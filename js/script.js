@@ -73,10 +73,14 @@ $(document).ready(function(){
 		$('#EmptyExample').empty();
 	})
 
-	$('#AddRemoveButton').click(function(){
+	$('#AddRed').click(function(){
 		$('#AddRemoveExample').removeClass('blue');
 		$('#AddRemoveExample').addClass('red');
-	})
+	});
 
+	$('#AddBlue').click(function(){
+		$('#AddRemoveExample').removeClass('red');
+		$('#AddRemoveExample').addClass('blue');
+	})
 
 });

@@ -384,11 +384,20 @@ $("#ID").removeClass('Blue');
 					</div>
 					<p>What this states is that it will add the class 'red' to the element with the ID of ID and it will also remove the class 'blue' from that element aswell.</p>
 					
-					<button class="btn btn-primary" id="AddRemoveButton">Add/Remove Class</button>
+					<button class="btn btn-primary" id="AddRed">Add Red</button>
+					<button class="btn btn-primary" id="AddBlue">Add Blue</button>
 					<div id="AddRemoveExample" class="box blue"></div>
-
+					<p>What this example is doing is when you click add Red, it removes the class blue from the element and adds the class red. When you click the add blue button it does the opotsite.</p>
 
 					<h4>Toggle Class</h4>
+					<p>Toggle Class is the same as Add/Remove Class, only it simplifies the function to include both. If you are toggling a class. If it already exsits on an element, it will remove it, and if it doesn't it will add it.</p>
+					<div class="well">		
+<pre>
+$("#ID").toggleClass('Large');
+</pre>
+					</div>
+					
+
 
 					<h4>CSS</h4>
 
