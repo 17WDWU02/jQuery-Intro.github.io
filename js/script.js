@@ -83,4 +83,12 @@ $(document).ready(function(){
 		$('#AddRemoveExample').addClass('blue');
 	})
 
+	$('#ToggleClassButton').click(function(){
+		$('#ToggleClassExample').toggleClass('large');
+	})
+
+	$('#CssExampleButton').click(function(){
+		$('#CssExample').css({'background-color':'yellow','width':'600px'})
+	})
+
 });

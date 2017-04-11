@@ -149,6 +149,19 @@ $(document).ready(function(){
 							$(".class")
 						</div>
 						<p>This selector will select all of the elements which have the given class.</p>
+						<h4>This</h4>
+						<div class="well">
+							$(this)
+						</div>
+						<p>$(this) is a selector which can only be used when a jQuery function has occurred. It is in reference to the element with triggers the event. Read the example bellow.</p>
+						<div class="well">		
+<pre>
+$("#Example").click(function(){
+	$(this).hide();
+});		
+</pre>
+						</div>
+						<p>What is happening in this example is when a element with the ID of Example is clicked we want to hide that element. Instead of adding $('#Example').hide(); we can just say $(this). In this example $(this) means $('#Example') beacuse that is the element which is calling the function.</p>
 					</div>
 
 					<hr>
@@ -396,14 +409,27 @@ $("#ID").removeClass('Blue');
 $("#ID").toggleClass('Large');
 </pre>
 					</div>
-					
-
+					<p>This line of code above states that it is toggling a class called large on and off.</p>
+					<button id="ToggleClassButton" class="btn btn-primary">Toggle Size</button>
+					<div id="ToggleClassExample" class="box"></div>
+					<P>Clicking the toggle size button will add on the class of large which has a width of 600px. WHen you click it again it will remove that class and then it will revert to its original size.</P>
 
 					<h4>CSS</h4>
-
-
-
-
+					<p>So far we have been talking about manipulating the DOM using classes. What we can do is directly change the css of an element using jQuery.</p>
+					<div class="well">		
+<pre>
+$("#ID").css('background-color', 'yellow');
+</pre>
+					</div>
+					<p>This adds just a single CSS style to the element. It won't change anything in the exsisting CSS file, but it will add <code>style=""</code> directly into the html element and because we are adding it to the element itself, that value will overide any exsisting values which might conflict with it.<br>You can also change several different css elements this way by putting the values into an array.</p>
+					<div class="well">		
+<pre>
+$("#ID").css({'background-color':'yellow','width':'600px'})
+</pre>
+					</div>
+					<button id="CssExampleButton" class="btn btn-primary">Add CSS</button>
+					<div id="CssExample" class="box"></div>
+					<p>Clicking the add CSS button will directly add on a background colour of yellow and a width of 600px to the element. Originally they have speicifed background colour and width values already but this will overide those values.</p>
 
 
 
